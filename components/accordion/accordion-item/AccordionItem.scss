@@ -1,0 +1,10 @@
+@import '../../../commons/commons';
+
+.ch-accordion-item {
+
+
+  &.is-active {
+    border: solid 2px $malibu;
+  }
+
+}

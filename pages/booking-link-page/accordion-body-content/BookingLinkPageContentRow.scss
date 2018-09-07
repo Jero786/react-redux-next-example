@@ -1,0 +1,28 @@
+@import '../../../commons/commons';
+
+.ch-booking-link-page-content-row {
+  display: flex;
+  align-items: center;
+
+  @include bp(xs) {
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  &__id {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $grayLighter;
+
+    &-number {
+      font-size: 22px;
+      top: 10px;
+    }
+  }
+}

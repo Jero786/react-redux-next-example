@@ -1,0 +1,14 @@
+@import '../../commons/commons';
+
+.ch-side-bar {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  ul {
+    list-style: none;
+  }
+
+  @include soft-shadow;
+  width: 29em;
+}

@@ -1,0 +1,113 @@
+@import '../../../commons/commons';
+
+.ch-accordion-item-header {
+  padding: 1em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  height: 5em;
+
+  font-size: 1em;
+
+  cursor: pointer;
+  border-bottom: solid 1px $grayLight;
+  background-color: $white;
+  transform: translateY(0);
+
+  &:hover {
+    background-color: $grayLighter;
+
+    @include shallow-soft-shadow;
+  }
+
+  &.is-active {
+    border-bottom: none;
+    &:hover {
+      background-color: $white;
+      box-shadow: none;
+    }
+  }
+
+  &__icon {
+    border: solid 1px $grayLighter;
+    margin-left: 24px;
+    margin-top: 0;
+  }
+
+  &__body {
+    height: inherit;
+    margin-right: 3em;
+    padding: 1em;
+
+    font-size: 1.4em;
+
+    &-title {
+      font-size: 1.2em;
+      font-weight: 400;
+      color: $black;
+    }
+
+    &-message {
+    }
+  }
+
+  &__expend {
+    position: absolute;
+    right: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+
+    &-icon {
+      font-style: normal;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.ch-accordion-item-header__icon.bg-icon_rules {
+  width: 19px; height: 15px;
+  background: url('/static/images/sprite_booking.png') -171px -92px;
+}
+
+.ch-accordion-item-header__icon.bg-icon_algorithm {
+  width: 24px; height: 24px;
+  background: url('/static/images/sprite_booking.png') -10px -122px;
+}
+
+.ch-accordion-item-header__icon.bg-icon_cloud {
+  width: 25px; height: 18px;
+  background: url('/static/images/sprite_booking.png') -96px -122px;
+}
+
+.ch-accordion-item-header__icon.bg-icon_calendar {
+  width: 20px; height: 20px;
+  background: url('/static/images/sprite_booking.png') -171px -52px;
+}
+
+.ch-accordion-item-header__icon.bg-icon_advance_room {
+  width: 20px; height: 22px;
+  background: url('/static/images/sprite_booking.png') -171px -10px;
+}
+.ch-accordion-item-header__icon.bg-icon_user {
+  width: 24px; height: 24px;
+  background: url('/static/images/sprite_booking.png') -123px -58px;
+}
+
+.icon-add {
+  background: url('/static/images/icon-add.png') no-repeat;
+  padding: 0 7px;
+}
+
+.icon-minus {
+  background: url('/static/images/icon-minus.png') no-repeat;
+  padding: 0 7px;
+}

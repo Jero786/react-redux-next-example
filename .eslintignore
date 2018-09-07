@@ -1,0 +1,8 @@
+/.next
+/__mocks__
+/__mocks__
+/coverage
+/cypress
+/node_modeules
+/static
+/pages/_document.js

@@ -1,0 +1,15 @@
+@import '../../../commons/commons';
+
+.ch-accordion-item-body {
+  transition: all 0.4s ;
+  max-height:0;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+
+  &.is-visible {
+    max-height: 100vh;
+    padding: 2em;
+    background-color: $white;
+  }
+}

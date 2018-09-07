@@ -1,0 +1,96 @@
+@import '../../commons/commons';
+
+.ch-icon-marketing {
+  position: relative;
+  top: 30px;
+
+  &__status {
+    padding: 5px;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    left: 1.4em;
+    top: 1em;
+
+    background-color: $purple;
+  }
+
+  &__text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    left: 2.6em;
+    top: .5em;
+  }
+}
+.ch-side-bar-list {
+  margin-top: 8.76em;
+  margin-left: .4em;
+}
+
+.bg-icon_events_sidebar {
+  width: 16px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -211px -82px;
+}
+
+.bg-icon_reports_sidebar {
+  width: 16px;
+  height: 10px;
+  background: url('/static/images/sprite_booking.png') -83px -203px;
+}
+
+.bg-icon_link_sidebar {
+  width: 16px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -118px -166px;
+}
+
+.bg-icon_layers_sidebar {
+  width: 16px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -154px -166px;
+}
+
+.bg-icon_beel_reminder_sidebar {
+  width: 17px;
+  height: 15px;
+  background: url('/static/images/sprite_booking.png') -10px -203px;
+}
+
+.bg-icon_conference_room_side_bar {
+  width: 22px;
+  height: 24px;
+  background: url('/static/images/sprite_booking.png') -54px -122px;
+}
+
+.bg-icon_form_sidebar {
+  width: 16px;
+  height: 14px;
+  background: url('/static/images/sprite_booking.png') -47px -203px;
+}
+
+.bg-icon_inbound_router_sidebare {
+  width: 16px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -82px -166px;
+}
+
+.bg-icon_user_sidebar {
+  width: 14px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -247px -10px;
+}
+
+.bg-icon_integration {
+  width: 16px;
+  height: 17px;
+  background: url('/static/images/sprite_booking.png') -10px -166px;
+}
+
+.bg-icon_log_out {
+  width: 17px;
+  height: 16px;
+  background: url('/static/images/sprite_booking.png') -171px -127px;
+}

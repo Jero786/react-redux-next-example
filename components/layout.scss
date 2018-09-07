@@ -1,0 +1,19 @@
+@import '../commons/commons';
+
+.ch-layout {
+  padding:  0;
+
+  .ch-navigation-bar {
+    @include soft-shadow;
+  }
+
+  &__dark-background {
+    background-color: $grayLighter;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

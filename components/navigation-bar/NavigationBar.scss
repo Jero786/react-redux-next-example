@@ -1,0 +1,63 @@
+@import "../../commons/commons";
+
+$height: 2.5em;
+
+.ch-navigation-bar {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: relative;
+
+  @include bp(xs, md) {
+    height: 50px;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 24px;
+
+    width: 28px; height: 28px;
+    background: url('/static/images/sprite_booking.png') -123px -10px;
+  }
+
+  &__activity {
+    position: absolute;
+    right: 70px;
+
+    width: 33px; height: 33px;
+    background: url('/static/images/sprite_booking.png') -70px -10px;
+
+    @include bp(xs) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    height: inherit;
+    font-size: 11px;
+
+    @include bp(md, lg) {
+      font-size: 12px;
+    }
+    @include bp(sm, md) {
+      font-size: 11px;
+    }
+    @include bp(xs) {
+      font-size: 4px;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    height: $height;
+    right: 2em;
+  }
+
+  background-color: $white;
+
+  cursor: pointer;
+  font-size: 12px;
+}
