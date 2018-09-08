@@ -37,6 +37,13 @@ now
 
 * **Jeronimo Carrizo** - *Initial work* - (https://github.com/Jero786)
 
+## Roadmap
+
+* I18n
+* https://circleci.com/product/
+* Coverage buget status with coveralls
+
+
 ## License
 
 This project is licensed under the MIT License
