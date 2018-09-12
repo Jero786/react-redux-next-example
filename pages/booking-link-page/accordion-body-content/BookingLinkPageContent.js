@@ -18,32 +18,32 @@ export default class BookingLinkPageContent extends React.PureComponent {
         const { bookingLinks, onExpandAccordion, accordionIndexExpanded} = this.props;
 
         const bookingLinksEl = bookingLinks.map(bookingItem => (
-            <AccordionItem
-                key={`ch-booking-item-index-${bookingItem.get('id')}`}
-                icon={bookingItem.get('icon')}
-                title={bookingItem.get('title')}
-                message={bookingItem.get('message')}
-            >
-                {this.getContentEl(bookingItem.get('content'))}
-            </AccordionItem>
+          <AccordionItem
+            key={`ch-booking-item-index-${bookingItem.get('id')}`}
+            icon={bookingItem.get('icon')}
+            title={bookingItem.get('title')}
+            message={bookingItem.get('message')}
+          >
+            {this.getContentEl(bookingItem.get('content'))}
+          </AccordionItem>
         )).toJS();
         return (
-            <div className="ch-booking-link-page-content">
-                <div className="booking-link-page__main">
-                    <div className="booking-link-page__title">
-                        <div className="booking-link-page__title-icon"></div>
-                        <div className="booking-link-page__title-text">Edit Booking Link</div>
-                    </div>
-                    <div className="booking-link-page__body">
-                        <Accordion
-                            onClick={onExpandAccordion}
-                            indexExpanded={accordionIndexExpanded}
-                        >
-                            {bookingLinksEl}
-                        </Accordion>
-                    </div>
-                </div>
+          <div className="ch-booking-link-page-content">
+            <div className="booking-link-page__main">
+              <div className="booking-link-page__title">
+                <div className="booking-link-page__title-icon" />
+                <div className="booking-link-page__title-text">Edit Booking Link</div>
+              </div>
+              <div className="booking-link-page__body">
+                <Accordion
+                  onClick={onExpandAccordion}
+                  indexExpanded={accordionIndexExpanded}
+                >
+                  {bookingLinksEl}
+                </Accordion>
+              </div>
             </div>
+          </div>
         );
     }
 }

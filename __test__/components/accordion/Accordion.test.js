@@ -13,21 +13,21 @@ describe('Accordion', () => {
 
     it('should have the properly style', function () {
         const wrapper = render(
-            <Accordion>
+          <Accordion>
             <AccordionItem />
             <AccordionItem />
-            </Accordion>);
+          </Accordion>);
 
         expect(wrapper.hasClass('ch-accordion')).to.be.true;
     });
 
     it('should contain the proper amount of their child', function () {
         const wrapper = render((
-            <Accordion>
+          <Accordion>
             <AccordionItem />
             <AccordionItem />
             <AccordionItem />
-            </Accordion>)
+          </Accordion>)
         );
 
         expect(wrapper.children().length).to.equal(3);
@@ -35,10 +35,10 @@ describe('Accordion', () => {
 
     it('should contain properly text each accordion item', function () {
         const wrapper = render((
-            <Accordion>
+          <Accordion>
             <AccordionItem title="Rules" message="Some texts about message of rules" />
             <AccordionItem title="Algorithm" message="Some texts about algorithm" />
-            </Accordion>)
+          </Accordion>)
     );
 
         expect(wrapper.find('.ch-accordion-item-header').eq(0).text()).to.contain('Rules');
@@ -47,10 +47,10 @@ describe('Accordion', () => {
 
     it('should expand accordion given index', function () {
         const wrapper = mount((
-            <Accordion indexExpanded={0}>
+          <Accordion indexExpanded={0}>
             <AccordionItem title="Rules" message="Some texts about message of rules" />
             <AccordionItem title="Algorithm" message="Some texts about algorithm" />
-            </Accordion>
+          </Accordion>
     )
     );
 
@@ -60,10 +60,10 @@ describe('Accordion', () => {
     it('should handler click event properly', function () {
         const spy = sinon.spy();
         const wrapper = mount((
-            <Accordion onClick={spy}>
+          <Accordion onClick={spy}>
             <AccordionItem title="Rules" message="Some texts about message of rules" />
             <AccordionItem title="Algorithm" message="Some texts about algorithm" />
-            </Accordion>
+          </Accordion>
     ));
 
         wrapper.find('.ch-accordion-item-header').first().simulate('click');
@@ -73,14 +73,14 @@ describe('Accordion', () => {
 
     it('should show the properly content of the accordion once it\'s already expanded', function () {
         const wrapper = mount((
-            <Accordion indexExpanded={0}>
+          <Accordion indexExpanded={0}>
             <AccordionItem title="Rules" message="Some texts about message of rules">
-            <div>Some fun content</div>
-        </AccordionItem>
-        <AccordionItem title="Algorithm" message="Some texts about algorithm">
-            <div>Other some fun content too</div>
-        </AccordionItem>
-        </Accordion>));
+              <div>Some fun content</div>
+            </AccordionItem>
+            <AccordionItem title="Algorithm" message="Some texts about algorithm">
+              <div>Other some fun content too</div>
+            </AccordionItem>
+          </Accordion>));
 
         expect(wrapper.find('.ch-accordion-item-body').first().hasClass('is-visible')).to.be.true;
     });

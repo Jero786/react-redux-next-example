@@ -17,22 +17,22 @@ export class BookingLinkPage extends React.PureComponent {
         const {navLinks, tabIndex, bookingLinks, onExpandAccordion, accordionIndexExpanded} = this.props;
 
         return (
-            <div className="ch-home-view">
-                <Layout
-                    title="Booking Links"
-                    navLinks={navLinks}
-                    tabIndex={tabIndex}
-                >
-                    <div className="booking-link-page">
-                        <BookingLinkPageSideBar />
-                        <BookingLinkPageContent
-                            bookingLinks={bookingLinks}
-                            onExpandAccordion={onExpandAccordion}
-                            accordionIndexExpanded={accordionIndexExpanded}
-                        />
-                    </div>
-                </Layout>
-            </div>
+          <div className="ch-home-view">
+            <Layout
+              title="Booking Links"
+              navLinks={navLinks}
+              tabIndex={tabIndex}
+            >
+              <div className="booking-link-page">
+                <BookingLinkPageSideBar />
+                <BookingLinkPageContent
+                  bookingLinks={bookingLinks}
+                  onExpandAccordion={onExpandAccordion}
+                  accordionIndexExpanded={accordionIndexExpanded}
+                />
+              </div>
+            </Layout>
+          </div>
         );
     }
 }

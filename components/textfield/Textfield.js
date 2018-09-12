@@ -7,9 +7,9 @@ export default class Textfield extends React.PureComponent {
     render() {
         const {text, style} = this.props;
         return (
-            <div className="ch-textfield">
-                <input type="text" style={style} defaultValue={text} />
-            </div>
+          <div className="ch-textfield">
+            <input type="text" style={style} defaultValue={text} />
+          </div>
         );
     }
 }

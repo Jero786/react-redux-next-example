@@ -8,19 +8,19 @@ describe('SideBar', () => {
 
     it('should exist', () => {
         expect((
-            <SideBar>
+          <SideBar>
             <SideBarItem />
             <SideBarItem />
-            </SideBar>
+          </SideBar>
         )).to.exist;
     });
 
     it('should show properly amount of children', function () {
         const wrapper = render((
-            <SideBar>
+          <SideBar>
             <SideBarItem />
             <SideBarItem />
-            </SideBar>
+          </SideBar>
         ));
 
         expect(wrapper.children().length).to.equal(2);
@@ -28,10 +28,10 @@ describe('SideBar', () => {
 
     it('should show properly text of item', function () {
         const wrapper = render((
-            <SideBar>
+          <SideBar>
             <SideBarItem text="item 1" />
             <SideBarItem />
-            </SideBar>
+          </SideBar>
     ));
 
         expect(wrapper.find('.ch-side-bar-item__text').text()).to.equal('item 1');
@@ -39,9 +39,9 @@ describe('SideBar', () => {
 
     it('should show active properly the item defined', function () {
         const wrapper = render(
-            <SideBar>
+          <SideBar>
             <SideBarItem text="item 1" isActive />
-        </SideBar>
+          </SideBar>
     );
 
         expect(wrapper.find('.ch-side-bar-item').first().hasClass('is-active')).to.be.true;

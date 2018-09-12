@@ -8,11 +8,11 @@ export default class NavigationBarItem extends React.PureComponent{
         const {text, icon, isActive} = this.props;
         const underLine = isActive ? (<i className="ch-active" />) : null;
         return (
-            <div className={className('ch-navigation-bar-item', {'is-active': isActive})}>
-                <i className={`ch-navigation-bar-item__icon ${icon}`} />
-                <span className="ch-navigation-bar-item__text">{text}</span>
-                {underLine}
-            </div>
+          <div className={className('ch-navigation-bar-item', {'is-active': isActive})}>
+            <i className={`ch-navigation-bar-item__icon ${icon}`} />
+            <span className="ch-navigation-bar-item__text">{text}</span>
+            {underLine}
+          </div>
         );
     }
 }

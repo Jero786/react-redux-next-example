@@ -16,7 +16,7 @@ describe('Home Reducer', () => {
     it('should fetch booking link properly', function () {
         const store = fromJS({tabIndex: 4});
 
-        const result = homeReducer(store, {type:actionTypes.FETCH_BOOKING_LINK});
+        const result = homeReducer(store, {type:actionTypes.FETCH_BOOKING_LINK_REQUEST});
         expect(result.get('tabIndex')).to.equals(1);
     });
 

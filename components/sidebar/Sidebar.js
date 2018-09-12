@@ -6,7 +6,7 @@ export default class SideBar extends React.PureComponent {
     render() {
         const {children} = this.props;
         return (
-            <ul className="ch-side-bar">{children}</ul>
+          <ul className="ch-side-bar">{children}</ul>
         );
     }
 }
