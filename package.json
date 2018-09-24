@@ -1,7 +1,7 @@
 {
   "name": "chili-piper-test",
   "version": "0.1.0",
-  "description": "Interview challenger at Chili Pipiper ### Prerequisites",
+  "description": "A sample project with React, Redux and NextJS",
   "main": "index.js",
   "author": "Jeronimo Carrizo <jero.carrizo@gmail.com> (https://twitter.com/jero786)",
   "scripts": {
@@ -11,7 +11,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "cypress:open": "cypress open",
     "precommit": "lint-staged"
   },
   "keywords": [],
@@ -47,9 +46,8 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
-    "cypress": "^3.0.3",
     "enzyme": "3.2.0",
-    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-adapter-react-16": "1.5.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
