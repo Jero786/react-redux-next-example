@@ -14,15 +14,15 @@ export default class BookingLinkPageContentRow extends React.PureComponent {
         const ruleNumber = get(rule, 'ruleNumber');
 
         return (
-            <div className="ch-booking-link-page-content-row">
+          <div className="ch-booking-link-page-content-row">
             <span className="ch-booking-link-page-content-row__id">
               <span className="ch-booking-link-page-content-row__id-number">{ruleContentId}</span>
             </span>
-                <span><Textfield text={opportunityOwner} /></span>
-                <span><Textfield text={active} /></span>
-                <span><Textfield style={{maxWidth: '30px'}} text={operation} /></span>
-                <span><Textfield style={{maxWidth: '30px'}} text={ruleNumber} /></span>
-            </div>
+            <span><Textfield text={opportunityOwner} /></span>
+            <span><Textfield text={active} /></span>
+            <span><Textfield style={{maxWidth: '30px'}} text={operation} /></span>
+            <span><Textfield style={{maxWidth: '30px'}} text={ruleNumber} /></span>
+          </div>
         );
     }
 }

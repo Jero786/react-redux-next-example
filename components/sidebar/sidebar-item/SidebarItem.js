@@ -7,10 +7,10 @@ export default class SideBarItem extends React.PureComponent {
     render() {
         const {icon, text, isActive} = this.props;
         return (
-            <li className={classNames('ch-side-bar-item', {'is-active': isActive})}>
-                <span className={`ch-side-bar-item__icon ${icon}`}></span>
-                <span className="ch-side-bar-item__text">{text}</span>
-            </li>
+          <li className={classNames('ch-side-bar-item', {'is-active': isActive})}>
+            <span className={`ch-side-bar-item__icon ${icon}`} />
+            <span className="ch-side-bar-item__text">{text}</span>
+          </li>
         );
     }
 }

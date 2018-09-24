@@ -34,16 +34,16 @@ export default class Accordion extends React.PureComponent {
 
     render() {
         return (
-            <div
-                role="button"
-                tabIndex="0"
-                onKeyDown={() => {
+          <div
+            role="button"
+            tabIndex="0"
+            onKeyDown={() => {
                 }}
-                onClick={this.onClick}
-                className="ch-accordion"
-            >
-                {this.hydrateChildrenProps()}
-            </div>
+            onClick={this.onClick}
+            className="ch-accordion"
+          >
+            {this.hydrateChildrenProps()}
+          </div>
         );
     }
 }

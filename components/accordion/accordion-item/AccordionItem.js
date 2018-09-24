@@ -10,18 +10,18 @@ export default class AccordionItem extends React.PureComponent {
         const {icon, title, message, isActive, indexItem, children} = this.props;
 
         return (
-            <div className={classNames('ch-accordion-item', {'is-active': isActive})}>
-                <AccordionItemHeader
-                    icon={icon}
-                    title={title}
-                    message={message}
-                    isActive={isActive}
-                    indexItem={indexItem}
-                />
-                <AccordionItemBody isVisible={isActive}>
-                    {children}
-                </AccordionItemBody>
-            </div>
+          <div className={classNames('ch-accordion-item', {'is-active': isActive})}>
+            <AccordionItemHeader
+              icon={icon}
+              title={title}
+              message={message}
+              isActive={isActive}
+              indexItem={indexItem}
+            />
+            <AccordionItemBody isVisible={isActive}>
+              {children}
+            </AccordionItemBody>
+          </div>
         );
     }
 }

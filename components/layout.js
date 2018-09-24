@@ -13,23 +13,23 @@ class Layout extends React.PureComponent {
         const {tabIndex, title, children, description, navLinks} = this.props;
         const someDescription = description ? description : title;
         return (
-            <div className="ch-layout">
-                <Head>
-                    <title>
-                        {title}
-                    </title>
-                    <meta charSet="utf-8" />
-                    <meta name="Description" content={someDescription} />
-                    <meta
-                        name="viewport"
-                        content="initial-scale=1.0, width=device-width"
-                        key="viewport"
-                    />
-                </Head>
-                <NavigationBar tabIndex={tabIndex} navLinks={navLinks.toJS()} />
-                {children}
-                <div className="ch-layout__dark-background" />
-            </div>
+          <div className="ch-layout">
+            <Head>
+              <title>
+                {title}
+              </title>
+              <meta charSet="utf-8" />
+              <meta name="Description" content={someDescription} />
+              <meta
+                name="viewport"
+                content="initial-scale=1.0, width=device-width"
+                key="viewport"
+              />
+            </Head>
+            <NavigationBar tabIndex={tabIndex} navLinks={navLinks.toJS()} />
+            {children}
+            <div className="ch-layout__dark-background" />
+          </div>
         );
     }
 }

@@ -7,9 +7,9 @@ class AccordionItemBody extends React.PureComponent {
     render() {
         const {children, isVisible} = this.props;
         return (
-            <div className={classNames('ch-accordion-item-body', {'is-visible': isVisible})}>
-                {children}
-            </div>
+          <div className={classNames('ch-accordion-item-body', {'is-visible': isVisible})}>
+            {children}
+          </div>
         );
     }
 }

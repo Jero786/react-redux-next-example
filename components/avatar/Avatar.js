@@ -6,9 +6,9 @@ export default class Avatar extends React.PureComponent {
     render() {
         const {icon} = this.props;
         return (
-            <div className="ch-avatar">
-                <i className={`ch-avatar__icon bg-avatar ${icon}`} />
-            </div>
+          <div className="ch-avatar">
+            <i className={`ch-avatar__icon bg-avatar ${icon}`} />
+          </div>
         );
     }
 }
