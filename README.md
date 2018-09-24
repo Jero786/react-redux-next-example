@@ -1,5 +1,6 @@
 # React & Redux and Server rendering example project
 
+[![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
 [![Coverage Status](https://coveralls.io/repos/github/Jero786/react-redux-next-example/badge.svg?branch=master)](https://coveralls.io/github/Jero786/react-redux-next-example?branch=master)
 
 ### Prerequisites
