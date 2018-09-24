@@ -1,10 +1,11 @@
-# Project Title
-
-Interview challenger at Chili Pipiper
+# React & Redux and Server rendering example project
 
 ### Prerequisites
 
-`Node 6+`
+`Node 8+`
+
+**NOTE**:
+I suggest to use nvm and install the latest version (v10.x.x)
 
 ### Installing
 
