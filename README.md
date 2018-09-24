@@ -19,6 +19,13 @@ $ npm install
 **NOTE**:
 In case that use `nvm` you will need to set by default  Node+6 (eg: `nvm alias default v10.8.0`)
 
+## Start project
+```
+$ npm start
+
+```
+open a browser in http://localhost:3000
+
 ## Running unit tests
 ```
 $ npm run test
@@ -40,13 +47,6 @@ now
 ## Authors
 
 * **Jeronimo Carrizo** - *Initial work* - (https://github.com/Jero786)
-
-## Roadmap
-
-* I18n
-* https://circleci.com/product/
-* Coverage buget status with coveralls
-
 
 ## License
 
