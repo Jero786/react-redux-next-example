@@ -1,6 +1,6 @@
 # Project Title
 
-Interview challenger at Chili Pipiper
+React, Redux & next example project
 
 ### Prerequisites
 
